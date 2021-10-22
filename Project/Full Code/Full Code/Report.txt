@@ -1,0 +1,19 @@
+----Patient Report---- 
+Status : Error
+Disease : HANTA VIRUS
+
+****Immidiately Visit Doctor For Consultation.****
+
+----Symptoms of HANTA VIRUS----
+-Fever greater than 101 *F, chills, body aches, headaches
+-Nausea and vomiting and abdominal pain
+-New rash (faint red spots)
+-A dry cough followed by rapid onset of breathing difficulty
+
+----How HANTA VIRUS is Dignosed and Treated----
+There is no specific treatment, cure, or vaccine for hantavirus infection. However, we do know that if infected individuals are recognized early and receive medical care in an intensive care unit, they may do better. In intensive care, patients are intubated and given oxygen therapy to help them through the period of severe respiratory distress.
+The earlier the patient is brought in to intensive care, the better. If a patient is experiencing full distress, it is less likely the treatment will be effective.
+-Therefore, if you have been around rodents and have symptoms of fever, deep muscle aches, and severe shortness of breath, see your doctor immediately. Be sure to tell your doctor that you have been around rodents—this will alert your physician to look closely for any rodent-carried disease, such as HPS
+
+----RISK FACTOR----
+Environmental factors Rural populations with potential exposure to wild rodents are at risk. There are cases of patients developing HPS without any obvious exposure to rodents, but it is possible that patients may not recognize their rodent exposure. In these cases, an awareness of other cases of HPSin the area and suspicious signs and symptoms should alert one to seek help and clinicians to establish early diagnosis and treatment

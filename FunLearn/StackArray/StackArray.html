@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="../HomePage/img/favicon.ico" type="image/x-icon">
+	<title>
+		Implementation of Array Using Stack
+	</title>
+
+	<!-- css sheet for how the page is laid out -->
+
+	<link rel="stylesheet" href="visualizationPageStyle.css">
+
+
+	<!-- jqueury stuff.  Only used for the animation speed slider. -->
+	<link rel="stylesheet" href="ThirdParty/jquery-ui-1.8.11.custom.css">
+	<script src="ThirdParty/jquery-1.5.2.min.js"></script>
+	<script src="ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
+
+	<!-- Javascript for the actual visualization code -->
+	<script type="application/javascript" src="AnimationLibrary/CustomEvents.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/UndoFunctions.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/AnimatedObject.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/AnimatedLabel.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/AnimatedCircle.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/AnimatedRectangle.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/AnimatedLinkedList.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/HighlightCircle.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/Line.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/ObjectManager.js"> </script>
+	<script type="application/javascript" src="AnimationLibrary/AnimationMain.js"> </script>
+
+	<script type="application/javascript" src="AlgorithmLibrary/Algorithm.js"> </script>
+	<script type="application/javascript" src="AlgorithmLibrary/StackArray.js"> </script>
+
+
+</head>
+
+<body onload="init();" class="VisualizationMainPage">
+
+	<div id="container">
+
+		<div id="header">
+
+			<table>
+				<th>
+					<h1>Implementation of Array Using Stack</h1>
+				</th>
+
+				<th>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+						src="../HomePage/img/LOGO.png" width="50px">
+				</th>
+			</table>
+
+		</div>
+
+		<div=id="mainContent">
+
+			<div id="algoControlSection">
+				<table id="AlgorithmSpecificControls"> </table>
+			</div>
+			<div id="para" style="position:absolute; right:50px; top:105px;">
+				<p class="expert1" style=" border-style:double;">
+					<b>PUSH</b><br>
+					Step 1 - Check whether Stack is Full.(top = n)<br>
+					Step 2 - If FULL, then Clear the Stack!!!<br>
+					Step 3 - If NOT FULL, then push the value and <br>
+					increment top value by one (top=top+1)<br>
+				</p>
+			</div>
+			<div id="para2" style="position:absolute; right:50px; top:249px;">
+				<p class="expert2" style=" border-style:double;">
+					<b>POP</b><br>
+					Step 1 - Check whether stack is EMPTY.(top = -1)<br>
+					Step 2 - If EMPTY, the Pop will not perform<br>
+					Step 3 - If NOT EMPTY, then it will remove one <br>
+					element and value of top will be decremented by 1.
+					(top = top - 1)
+				</p>
+			</div>
+			<div id="para3" style="position:absolute; right:50px; top:412px;">
+				<p class="expert3" style=" border-style:double;">
+					<b>Clear Stack</b><br>
+					Step 1 - If (Top > -1) Then <br>
+					Step 2 - Clear the Stack!!! <br>
+					step 3 - Set (Top = -1)
+				</p>
+			</div>
+			<canvas id="canvas" width="900" height="500"></canvas>
+
+			<div id="generalAnimationControlSection">
+				<table id="GeneralAnimationControls"> </table>
+			</div>
+	</div>
+	<div id="footer">
+		<p>Copyright @ 2021 Fun Learn Designed by Raj, Utkarsh, Anuj, Suraj</p>
+	</div>
+
+	</div>
+</body>
+
+</html>

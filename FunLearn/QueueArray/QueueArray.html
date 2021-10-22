@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="../HomePage/img/favicon.ico" type="image/x-icon">
+	<title>
+		Implementation of Array Using Queue
+	</title>
+
+	<link rel="stylesheet" href="visualizationPageStyle.css">
+
+
+	<!-- jqueury stuff.  Only used for the animation speed slider. -->
+	<link rel="stylesheet" href="ThirdParty/jquery-ui-1.8.11.custom.css">
+	<script src="ThirdParty/jquery-1.5.2.min.js"></script>
+	<script src="ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
+
+	<!-- Javascript for the actual visualization code -->
+	<script type="text/javascript" src="AnimationLibrary/CustomEvents.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/UndoFunctions.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedObject.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedLabel.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedCircle.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedRectangle.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedLinkedList.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/HighlightCircle.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/Line.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/ObjectManager.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimationMain.js"> </script>
+
+	<script type="text/javascript" src="AlgorithmLibrary/Algorithm.js"> </script>
+	<script type="text/javascript" src="AlgorithmLibrary/QueueArray.js"> </script>
+
+
+</head>
+
+<body onload="init();" class="VisualizationMainPage">
+
+	<div id="container">
+
+		<div id="header">
+			<table>
+				<th>
+					<h1>Implementation of Array Using Queue</h1>
+				</th>
+				<th>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../HomePage/img/LOGO.png" width="50px">
+				</th>
+			</table>
+		</div>
+
+		<div=id="mainContent">
+
+			<div id="algoControlSection">
+				<table id="AlgorithmSpecificControls"> </table>
+			</div>
+
+			<div id="para" style="position:absolute; right:30px; top:82px;">
+				<p class="expert1" style=" border-style:double;">
+					<b>EnQUEUE</b><br>
+					Step 1 - Check whether queue is FULL.(rear == SIZE-1)<br>
+					Step 2 - Queue is FULL, Clear the QUEUE!!! <br>
+					Step 3 - If it is NOT FULL, then Enqueue the value and
+					increment rear value by one (rear++) and set queue[rear] = value.
+				</p>
+			</div>
+			<div id="para2" style="position:absolute; right:30px; top:251px;">
+				<p class="expert2" style=" border-style:double;">
+					<b>DeQUEUE</b><br>
+					Step 1 - Check whether queue is EMPTY. (front > rear) <br>
+					Step 2 - If it is EMPTY, then Dequeue will not perform<br>
+					Step 3 - If it is NOT EMPTY, then increment the front<br>
+					value by one (front ++).<br>
+					Then display dequeued value[front] as deleted element.
+					Then check whether both front and rear are equal
+					(front == rear)<br>
+				</p>
+			</div>
+			<div id="para3" style="position:absolute; right:30px; top:459px;">
+				<p class="expert3" style=" border-style:double;">
+					<b>Clear Queue</b><br>
+					Step 1 -Check if (rear == SIZE-1) then <br>
+					Step 2 - Queue is FULL, Clear the QUEUE!!! <br>
+					step 3 - Set FRONT = 0 & REAR = -1
+				</p>
+			</div>
+			<canvas id="canvas" width="900" height="500"></canvas>
+
+			<div id="generalAnimationControlSection">
+				<table id="GeneralAnimationControls"> </table>
+			</div>
+	</div>
+	<div id="footer">
+		<p>Copyright @ 2021 Fun Learn Designed by Raj, Utkarsh, Anuj, Suraj</p>
+	</div>
+
+	</div>
+</body>
+
+</html>

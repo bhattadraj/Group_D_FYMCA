@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="../HomePage/img/favicon.ico" type="image/x-icon">
+	<title>
+		Implementation of Queue Using Linked List
+	</title>
+
+	<!-- css sheet for how the page is laid out -->
+
+	<link rel="stylesheet" href="visualizationPageStyle.css">
+
+
+	<!-- jqueury stuff.  Only used for the animation speed slider. -->
+	<link rel="stylesheet" href="ThirdParty/jquery-ui-1.8.11.custom.css">
+	<script src="ThirdParty/jquery-1.5.2.min.js"></script>
+	<script src="ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
+
+	<!-- Javascript for the actual visualization code -->
+	<script type="text/javascript" src="AnimationLibrary/CustomEvents.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/UndoFunctions.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedObject.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedLabel.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedCircle.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedRectangle.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimatedLinkedList.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/HighlightCircle.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/Line.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/ObjectManager.js"> </script>
+	<script type="text/javascript" src="AnimationLibrary/AnimationMain.js"> </script>
+
+	<script type="text/javascript" src="AlgorithmLibrary/Algorithm.js"> </script>
+	<script type="text/javascript" src="AlgorithmLibrary/QueueLL.js"> </script>
+
+
+</head>
+
+<body onload="init();" class="VisualizationMainPage">
+
+	<div id="container">
+
+		<div id="header">
+
+			<table>
+				<th>
+					<h1>Implementation of Queue Using Linked List</h1>
+				</th>
+
+				<th>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../HomePage/img/LOGO.png" width="50px">
+				</th>
+			</table>
+
+		</div>
+
+		<div=id="mainContent">
+
+			<div id="algoControlSection">
+				<table id="AlgorithmSpecificControls"> </table>
+			</div>
+			<div id="para" style="position:absolute; right:30px; top:92px;">
+				<p class="expert1" style=" border-style:double;">
+					<b>EnQUEUE</b><br>
+					Step 1 - Create a newNode with given value and set 'newNode → next' to NULL.<br>
+					Step 2 - Check whether queue is Empty (rear == NULL)<br>
+					Step 3 - If Empty then, set front = newNode and rear = newNode.<br>
+					Step 4 - If Not Empty then, set rear → next = newNode and rear = newNode.
+				</p>
+			</div>
+			<div id="para2" style="position:absolute; right:30px; top:300px;">
+				<p class="expert2" style=" border-style:double;">
+					<b>DeQUEUE</b><br>
+					Step 1 - Check whether queue is Empty (front == NULL).<br>
+					Step 2 - If Not Empty then, define a Node pointer 'temp' and set it to 'front'.<br>
+					Step 3 - Then set 'front = front → next' and delete 'temp' (free(temp)).
+
+				</p>
+			</div>
+			<div id="para3" style="position:absolute; right:30px; top:470px;">
+				<p class="expert3" style=" border-style:double;">
+					<b>Clear Queue</b><br>
+					Step 1 - Check whether the queue is EMPTY.<br>
+					Step 2 - If not EMPTY, clear the queue.
+				</p>
+			</div>
+
+			<canvas id="canvas" width="1000" height="500"></canvas>
+
+			<div id="generalAnimationControlSection">
+				<table id="GeneralAnimationControls"> </table>
+			</div>
+	</div>
+	<div id="footer">
+		<p>Copyright @ 2021 Fun Learn Designed by Raj, Utkarsh, Anuj, Suraj</p>
+	</div>
+
+	</div>
+</body>
+
+</html>
